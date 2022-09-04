@@ -1,1 +1,62 @@
 /* You can customize theme styles here */
+html {
+  --primary-color: #04989e;
+}
+
+html body ::selection {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.header .navbar-brand span:first-child {
+  color: var(--primary-color) !important;
+}
+
+.header .navbar-brand span:nth-child(2) {
+  margin-top: -22px;
+}
+
+/*
+* Education
+*/
+.education::before {
+  height: 95%;
+  background-color: #04999e0c;
+}
+
+/*
+* Experience
+*/
+.experience__company {
+  color: var(--primary-color);
+}
+
+.experience__custom-box {
+  display: flex;
+  align-items: baseline;
+}
+.experience__custom-box .experience__internship {
+  margin-left: 8px;
+  font-size: small;
+  font-style: italic;
+}
+
+/*
+* Testimonials
+*/
+.testimonial__author-info span {
+  color: var(--primary-color);
+}
+
+.testimonal-border-bottom-fix::after{
+  z-index: 1;
+}
+
+/*
+* Contact
+*/
+.contact__info__noform {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

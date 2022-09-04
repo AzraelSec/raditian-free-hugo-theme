@@ -7,7 +7,12 @@
                 <div class="experience">
                     <div class="experience__date">{{ .duration }}</div>
                     <div class="experience__title">{{ .title }}</div>
-                    <div class="experience__company">{{ .company }}</div>
+                    <div class="experience__custom-box">
+                        <div class="experience__company">{{ .company }}</div>
+                        {{ if .internship }}
+                            <div class="experience__internship">internship</div>
+                        {{ end }}
+                    </div>
                 </div>
                 {{ end }}
             </div>
